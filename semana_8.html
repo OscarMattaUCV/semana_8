@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard con Github</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            margin:0;
+            padding: 20px;
+            display: flex;
+        }
+        .sideber{
+            width: 220px;
+            background-color: blue;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+        }
+        .sideber h2{
+            margin-top: 0;
+            text-align: center;
+        }
+        .sideber ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        .sideber ul li:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+        .main-content{
+            margin-left: 220px;
+            padding: 20px;
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+            color: blue;
+        }
+        .dashboard{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+            margin-top: 30px;
+        }
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgb(63, 63, 63);
+            text-align: center;
+        }
+        .card h2{
+            margin: 10px 0;
+            color: rgb(0, 38, 255);
+        }
+        .card p{
+            font-size: 18px;
+            color: blueviolet;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="sideber">
+        <h2>Menú de Opciones</h2>
+        <ul>
+            <li>Inciio</li>
+            <li>Resumen</li>
+            <li>Préstamos</li>
+            <li>Contacto</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Dashboard Financiero - Préstamos Bancarios</h1>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>Cuota Inicial</h2>
+                <p>S/ 32,550</p>
+            </div>
+            <div class="card">
+                <h2>Monto Financiado</h2>
+                <p>S/ 122,450</p>
+            </div>
+            <div class="card" >
+                <h2>Cuota Inicial</h2>
+                <p>S/ 3,302.47</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
